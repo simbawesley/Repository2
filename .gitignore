@@ -1,4 +1,81 @@
+
 *.class
+public class Wasup {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		int A = 5;
+		int B = 8;
+		System.out.println("Sup Everybody!!!");
+		
+		if(A==7)
+			System.out.println("A is 7");
+		else
+			System.out.println("A is not 7");
+	
+		Display();
+		System.out.println("===================================Averages==============================");
+		double Avg = Average(5,8);
+		System.out.println(Avg);
+		System.out.println("==========================================================================");
+		int List [] = {6,4,1,88,9,18,8,99,21,66,0};
+		int count = 11;
+		for(int cur : List)											//foreach
+		{
+			System.out.println(cur);
+		}
+		SelectionSort(List,count);
+		for(int cur : List)
+		{
+			System.out.println(cur);
+		}
+		
+		
+		/*List = new int [10];
+		*/
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void Display()
+	{
+		for(int x = 1; x<=200; x+=10)
+			System.out.println(x);
+	}
+	
+	public static double Average(int X, int Y)
+	{
+		double Avg = (X+Y)/2.0;
+		return Avg;
+	}
+	
+	public static void SelectionSort(int List[],int count)
+	{
+		for(int start = 0; start< count; start++)
+		{
+			int min = start;
+			for(int x = start+1; x < count; x++)
+			{
+				if (min>x);
+				min = x;
+			}
+			Swop(start,min,List);
+		}
+	}
+	
+	public static void Swop(int a, int b, int List [])
+	{
+		int temp = List[a];
+		List[a]=List[b];
+		List [b]=temp;
+	}
+	
+	
+
+}
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
