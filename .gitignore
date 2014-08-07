@@ -10,6 +10,8 @@ public class Wasup {
 		int A = 5;
 		int B = 8;
 		System.out.println("Sup Everybody!!!");
+		System.out.println("Hello");
+		System.out.println("Edit 2");
 		
 		if(A==7)
 			System.out.println("A is 7");
