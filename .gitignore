@@ -76,10 +76,17 @@ public class Wasup {
 	
 	public static void Swop(int a, int b, int List [])
 	{
-		int temp = List[a];
-		List[a]=List[b];
-		List [b]=temp;
+		   int temp = a;
+		   a=b;
+		   b=temp;
 	}
+	
+	public static void Information()
+	{
+   		System.out.println("My name is Simbarashe Mamombe and this is my Code");
+	}
+	
+	
 	
 	
 
