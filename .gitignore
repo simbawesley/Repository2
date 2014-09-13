@@ -80,7 +80,13 @@ public class Wasup {
 		List[a]=List[b];
 		List [b]=temp;
 	}
-	
+	 
+	public static Object Get(int pos)
+	{
+		if((po<0)||(pos>=count)
+		    return List[pos];
+		return null;
+	}
 	
 
 }
